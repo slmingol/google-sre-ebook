@@ -1,4 +1,4 @@
-FROM debian:bookworm-slim
+FROM ruby:3.3-slim-bookworm
 
 LABEL maintainer="github.google-sre-ebook@captnemo.in"
 
@@ -11,8 +11,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     calibre \
     file \
     pandoc \
-    ruby \
-    ruby-dev \
     lmodern \
     texlive-fonts-recommended \
     texlive-xetex \
